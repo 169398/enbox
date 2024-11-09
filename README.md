@@ -1,6 +1,6 @@
 # Enbox - Next-Gen Social Media Analytics
 
-Enbox is a modern, AI-powered social media analytics tool that provides real-time sentiment analysis and engagement metrics across various platforms. With a sleek, sci-fi-inspired design, Enbox offers a user-friendly interface and quick integration with popular social media platforms.
+Enbox is a modern, AI-powered social media analytics tool that provides real-time sentiment analysis and engagement metrics across various platforms. With a sleek,  design, Enbox offers a user-friendly interface and quick integration with popular social media platforms.
 
 ## Features
 
