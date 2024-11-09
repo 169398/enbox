@@ -8,13 +8,13 @@ import { Platform } from "@/lib/mock-data";
 import { use } from "react";
 
 interface PageProps {
-  params: { platform: string };
+  params: Promise<{ platform: string }>;
 }
+
 export default function DashboardPage({ params }: PageProps) {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-expect-error
-  const platform = use(params).platform;
+  const { platform } = use(params);
   const platformName = platform.charAt(0).toUpperCase() + platform.slice(1);
+
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">{platformName} Analytics</h1>

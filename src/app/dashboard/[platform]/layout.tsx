@@ -9,13 +9,13 @@ import { use } from "react";
 
 interface LayoutProps {
   children: React.ReactNode;
-  params: { platform: string };
+  params: Promise<{ platform: string }>;
 }
+
 export default function DashboardLayout({ children, params }: LayoutProps) {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-expect-error
-  const platform = use(params).platform as string;
+  const { platform } = use(params);
   const platformName = platform.charAt(0).toUpperCase() + platform.slice(1);
+
   return (
     <div className="container mx-auto py-6">
       <Breadcrumb className="mb-6">

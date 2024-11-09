@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Enbox - Next-Gen Social Media Analytics
 
-## Getting Started
+Enbox is a modern, AI-powered social media analytics tool that provides real-time sentiment analysis and engagement metrics across various platforms. With a sleek, sci-fi-inspired design, Enbox offers a user-friendly interface and quick integration with popular social media platforms.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **AI-Powered Analysis**: Advanced machine learning algorithms analyze sentiment patterns across platforms.
+- **Real-time Metrics**: Track engagement and sentiment changes as they happen.
+- **Smart Insights**: Get actionable recommendations based on your data.
+- **Quick Integration**: Connect your platforms in minutes, not hours.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React**: For building the user interface.
+- **Next.js**: For server-side rendering and routing.
+- **Framer Motion**: For animations and transitions.
+- **Tailwind CSS**: For styling and responsive design.
+- **Recharts**: For data visualization.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Instructions
 
-## Learn More
+1. **Clone the Repository**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/169398/enbox.git
+   cd enbox
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install Dependencies**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   Make sure you have Node.js and npm installed. Then, run:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the Development Server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+## Usage
+
+- **Platform Selection**: Choose a platform from the home page to view detailed analytics.
+- **Custom Website Analysis**: Add a custom website URL to analyze its sentiment and engagement metrics.
+- **Toggle Theme**: Use the mode toggle in the navbar to switch between light and dark themes.
+
+## Code Structure
+
+- **Components**: Reusable UI components are located in the `src/components` directory.
+- **Pages**: The main pages of the application are in the `src/app` directory.
+- **Styles**: Global styles and utility classes are defined in `src/app/globals.css`.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
