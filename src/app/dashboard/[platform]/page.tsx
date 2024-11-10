@@ -3,6 +3,7 @@
 import { EngagementMetrics } from "@/components/dashboard/engagement-metrics";
 import { SentimentOverview } from "@/components/dashboard/sentiment-overview";
 import { TrendingTopics } from "@/components/dashboard/trending-topics";
+import { MiraChatbot } from "@/components/dashboard/mira-chatbot";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Platform } from "@/lib/mock-data";
 import { use } from "react";
@@ -16,7 +17,7 @@ export default function DashboardPage({ params }: PageProps) {
   const platformName = platform.charAt(0).toUpperCase() + platform.slice(1);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 relative">
       <h1 className="text-3xl font-bold">{platformName} Analytics</h1>
 
       <Tabs defaultValue="sentiment">
@@ -38,6 +39,8 @@ export default function DashboardPage({ params }: PageProps) {
           <EngagementMetrics platform={platform as Platform} />
         </TabsContent>
       </Tabs>
+
+      <MiraChatbot platform={platform as Platform} />
     </div>
   );
 }
