@@ -96,7 +96,7 @@ export function SentimentOverview({ platform }: { platform: Platform }) {
         <Card>
           <CardHeader>
             <CardTitle className="text-sm font-medium">
-              Positive Sentiment
+              Positive Comments
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -115,7 +115,7 @@ export function SentimentOverview({ platform }: { platform: Platform }) {
         <Card>
           <CardHeader>
             <CardTitle className="text-sm font-medium">
-              Neutral Sentiment
+              Neutral Comments
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -134,7 +134,7 @@ export function SentimentOverview({ platform }: { platform: Platform }) {
         <Card>
           <CardHeader>
             <CardTitle className="text-sm font-medium">
-              Negative Sentiment
+              Negative Comments
             </CardTitle>
           </CardHeader>
           <CardContent>
